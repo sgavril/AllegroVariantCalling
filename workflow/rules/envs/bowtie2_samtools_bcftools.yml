@@ -1,0 +1,7 @@
+name: bowtie2_samtools_bcftools
+channels:
+  - bioconda
+dependencies:
+  - bowtie2=2.4.2
+  - samtools=1.11
+  - bcftools=1.11
