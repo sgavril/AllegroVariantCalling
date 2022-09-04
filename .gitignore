@@ -3,3 +3,4 @@ workflow/genome*
 workflow/*vcf*
 workflow/*.gz*
 .snakemake/
+workflow/logs/
