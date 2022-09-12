@@ -1,6 +1,5 @@
 # Genome files + other outputs
-workflow/genome*
-workflow/*vcf*
-workflow/*.gz*
+workflow/*.tbi
 .snakemake/
 workflow/logs/
+seqs/

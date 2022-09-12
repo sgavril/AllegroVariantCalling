@@ -3,13 +3,10 @@
 #download_equcab2: FALSE                # Download EquCab2 files from Ensembl (incl. Bowtie2 index)
 download_equcab3: TRUE                  # Download EquCab3 genome if needed
 index_equcab3_for_bowtie2: TRUE         # Run step to create bowtie2 files
-generate_vcf_targets_from_plink: FALSE  # Convert .map and .ped to vcf for targets file
+targets_file: TRUE
 
 # Files
-plink_ped_map_prefix: "data/SNPchip_genotypes_in_Plink_format/Sable_Nugen_Illumina_Affy_combined"
 trim_galore_length: 15
 trim_galore_stringency: 7
 trim_galore_clip_r1: 40
 filter_variants: 'FMT/GQ<20'
-#INDEX: "genome" # Prefix for bowtie2 file
-#REFERENCE: "genome.fa" # Whole genome fasta 
