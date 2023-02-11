@@ -1,0 +1,10 @@
+# Options
+# Analysis options
+equcab_ref_genome:      3       # or 2               
+targets_file:           FALSE 
+
+# Files
+trim_galore_length:     15
+trim_galore_stringency: 7
+trim_galore_clip_r1:    40
+filter_variants:        'FMT/GQ<20'
