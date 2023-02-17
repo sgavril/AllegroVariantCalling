@@ -1,12 +1,10 @@
 # Options
 # Analysis options
-#download_equcab2: FALSE                # Download EquCab2 files from Ensembl (incl. Bowtie2 index)
-download_equcab3: TRUE                  # Download EquCab3 genome if needed
-index_equcab3_for_bowtie2: TRUE         # Run step to create bowtie2 files
-targets_file: TRUE
+equcab_ref_genome:      3               
+targets_file:           FALSE 
 
 # Files
-trim_galore_length: 15
+trim_galore_length:     15
 trim_galore_stringency: 7
-trim_galore_clip_r1: 40
-filter_variants: 'FMT/GQ<20'
+trim_galore_clip_r1:    40
+filter_variants:        "FMT/GQ<20"

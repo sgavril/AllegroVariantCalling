@@ -12,6 +12,6 @@ rule mpileup:
     conda:
         "../envs/bowtie2_samtools_bcftools.yml"
     shell:
-        " bcftools mpileup -d1000000 -Ob merged.bam "
+        " bcftools mpileup -d1000000 --skip-indels -Ov merged.bam "
         "--fasta-ref {input.reference} -a FORMAT/DP "
         "{params.t} -o merged.mpileup "

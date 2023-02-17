@@ -28,10 +28,9 @@ rule all:
         expand("intermediates/{sample}.bam", sample=SAMPLES),
         expand("intermediates/{sample}_rg.bam", sample=SAMPLES),
         #"targets.tsv",
-        "merged.bam",
-        "merged.mpileup",
-        "merged.vcf",
-        "merged.filt.vcf"
+        "merged.bam", "merged.mpileup",
+        "merged.vcf", "merged.filt.vcf",
+	"merged.depths.table", "merged.genotypes.table"
 
 include: "rules/0_download_ref_genome.smk"
 include: "rules/1_index_equcab.smk"
@@ -43,3 +42,4 @@ include: "rules/6_merge_bams.smk"
 include: "rules/7_mpileup.smk"
 include: "rules/8_call_variants.smk"
 include: "rules/9_filter_variants.smk"
+include: "rules/10_variants_to_table.smk"
